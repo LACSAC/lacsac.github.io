@@ -1,0 +1,222 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+    background: none; /* Quitar fondo blanco */
+    padding: 0; /* Eliminar padding para evitar bordes */
+    box-shadow: none; /* Quitar la sombra */
+
+}
+
+/* Logo y encabezado */
+header {
+    display: flex;
+    flex-direction: column; /* Acomoda los elementos en columna */
+    align-items: center;
+    gap: 10px; /* Espacio entre el logo y el título */
+}
+
+.logo {
+    height: 50px;
+}
+
+h1, h2, h3 {
+    color: #1a202c;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+/* Formularios */
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.section {
+    flex: 1;
+    min-width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-group label {
+    flex: 1 1 30%;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-group input, .form-group select {
+    flex: 1 1 65%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #4c51bf;
+    outline: none;
+    box-shadow: 0 0 4px rgba(76, 81, 191, 0.4);
+}
+
+button {
+    background: #4c51bf;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    padding: 10px 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #373d9e;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    margin-top: 15px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #4c51bf;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #eef1ff;
+    transition: 0.3s;
+}
+
+/* Acciones */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.actions .section {
+    flex: 1;
+    text-align: center;
+}
+
+.btn-eliminar {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-eliminar:hover {
+    background: #c0392b;
+}
+
+.btn-editar {
+    background: #f1c40f;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.btn-editar:hover {
+    background: #d4ac0d;
+}
+
+.btn-eliminar {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-eliminar:hover {
+    background: #c0392b;
+}
+
+#ordenarPor {
+    background: #4c51bf; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Quitar bordes */
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    outline: none;
+}
+
+/* Efecto al pasar el mouse */
+#ordenarPor:hover {
+    background: #373d9e;
+}
+
+/* Cuando el selector está enfocado */
+#ordenarPor:focus {
+    box-shadow: 0 0 5px rgba(76, 81, 191, 0.5);
+}
+
+/* Espaciado */
+.ordenar-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
